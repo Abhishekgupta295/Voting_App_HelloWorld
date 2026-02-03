@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-// const bcrypt = require('bcrypt');
+
 
 const CandidateSchema = new mongoose.Schema({
   name: {
@@ -13,12 +13,6 @@ const CandidateSchema = new mongoose.Schema({
   },
 
  
-  aadharCardNumber : {
-    type : Number,
-    required : true,
-    unique : true,
-  },
-
   party : {
     type : String,
     required : true,
